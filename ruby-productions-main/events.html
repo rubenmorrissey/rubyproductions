@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruby Productions</title>
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/drinks.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/video.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="big-container">
+        <div class="container">
+            <div class="mobile-nav">
+                <i class="fas fa-bars mobile-menu-btn"></i>
+                <ul class="mobile-menu slide-out display-none">
+                    <li><a href='food.html'>Food</a></li>
+                    <li><a href='drinks.html'>Drinks</a></li>
+                    <li><a href='events.html'>Events</a></li>
+                    <li><a href='about.html'>About</a></li>
+                </ul>
+            </div>
+            <nav>
+                <div class="nav-wrap">
+                    <a href="index.html">
+                        <h1>Ruby Productions</h1>
+                    </a>
+                    <div class="nav-right">
+                        <ul class="desktop-menu">
+                            <li><a href='food.html'>Food</a></li>
+                            <li><a href='drinks.html'>Drinks</a></li>
+                            <li><a href='events.html' class="active">Events</a></li>
+                            <li><a href='about.html'>About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <section>
+                <h2>Events</h2>
+                <a href="./events.html#video-list" class="active">Videos</a>
+            </section>
+
+            <section class="videos">
+                <ul id="video-list">
+                    <li onclick="show(market)">
+                        Video 
+                    </li>
+                    <li onclick="show(bacon)">
+                        Video 
+                    </li>
+                    <li onclick="show(market)">
+                        Video 
+                    </li>
+                    <li onclick="show(bacon)">
+                        Video 
+                    </li>
+                </ul>
+
+                <div class="popup" id="bacon">
+                    <iframe width="820" height="682" src="https://www.youtube.com/embed/1nayWnGCjDU" frameborder="0"
+                        allowfullscreen></iframe>
+                    <img src="assets/x.png" class="close" alt="x" onclick="hide(bacon)">
+                </div>
+
+                <div class="popup" id="market">
+                    <iframe width="831" height="467" src="https://www.youtube.com/embed/fEh6kz09IhM"
+                        allowfullscreen></iframe>
+                    <img src="assets/x.png" class="close" alt="x" onclick="hide(market)">
+                </div>
+            </section>
+
+            <video src="./assets/highlights.mp4" id="video" autoplay muted loop></video>
+            <script>
+                document.getElementById('video').play();
+            </script>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div id="button"></div>
+        <div id="container">
+            <div id="cont">
+                <div class="footer_center">
+                    <h3>Footer</h3>
+                    <!-- <div class="row">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/video.js"></script>
+</body>
+
+</html>

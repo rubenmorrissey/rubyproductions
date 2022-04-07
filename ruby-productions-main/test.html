@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/video.css" />
+  <title>Responsive Navigation Menu with JavaScript</title>
+</head>
+
+<body style="background-color: black;">
+  <div class="mobile-nav">
+    <i class="fas fa-bars mobile-menu-btn"></i>
+    <ul class="mobile-menu slide-out display-none">
+      <li>Food</li>
+      <li>Drinks</li>
+      <li>Events</li>
+      <li>About</li>
+    </ul>
+  </div>
+  <nav>
+    <div class="nav-wrap">
+      <a href="index.html">
+        <h1>Ruby Productions</h1>
+      </a>
+      <div class="nav-right">
+        <ul class="desktop-menu">
+          <li>Food</li>
+          <li>Drinks</li>
+          <li>Events</li>
+          <li>About</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="popup" id="market">
+    <iframe width="831" height="467" src="https://www.youtube.com/embed/fEh6kz09IhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img src="assets/x.png" class="close" alt="x" onclick="hide(market)">
+  </div>
+
+
+  <button class="btn" onclick="show(market)">Video 1</button>
+
+  <div class="popup" id="bacon">
+    <iframe width="820" height="682" src="https://www.youtube.com/embed/1nayWnGCjDU" frameborder="0" allowfullscreen></iframe>  
+    <img src="assets/x.png" class="close" alt="x" onclick="hide(bacon)">
+  </div>
+
+
+  <button class="btn2" onclick="show(bacon)">Video 2</button>
+
+  <script src="js/video.js"></script>
+
+</body>
+
+</html>
